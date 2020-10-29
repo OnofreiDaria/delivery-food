@@ -2,13 +2,14 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Delivery Food — доставка еды на дом</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Delivery Food — доставка еды на дом</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -41,33 +42,35 @@
 
 	<main class="main">
 		<div class="container">
+			<div class="swiper-container">
+				<section class="container-promo swiper-wrapper">
+					<section class="promo pizza swiper-slide">
+						<h1 class="promo-title">Онлайн-сервис <br/>доставки еды на дом</h1>
+						<p class="promo-text">
+							Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
+						</p>
+					</section>
+					<section class="promo kebab swiper-slide">
+						<h1 class="promo-title">Шашлыки на майские <br> со скидкой 35%</h1>
+						<p class="promo-text">
+							Закажите шашлыки в любом ресторане до 10 мая и получите скидку по промокоду OMAGAD
+						</p>
+					</section>
+					<section class="promo vegetables swiper-slide">
+						<h1 class="promo-title">Скидка 20% на всю еду <br> по промокоду LOVE.JS</h1>
+						<p class="promo-text">
+							Блюдо из ресторана привезут вместе с двумя подарочными книгами по фронтенду
+						</p>
+					</section>
+					<section class="promo sushi swiper-slide">
+						<h1 class="promo-title">Сеты со скидкой до 30% <br> в ресторанах</h1>
+						<p class="promo-text">
+							Скидки на сеты до 30 мая по промокоду DADADA
+						</p>
+					</section>
+				</section>
+			</div>
 
-			<section class="container-promo">
-				<section class="promo pizza">
-					<h1 class="promo-title">Онлайн-сервис <br/>доставки еды на дом</h1>
-					<p class="promo-text">
-						Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
-					</p>
-				</section>
-				<!-- <section class="promo kebab">
-					<h1 class="promo-title">Шашлыки на майские <br> со скидкой 35%</h1>
-					<p class="promo-text">
-						Закажите шашлыки в любом ресторане до 10 мая и получите скидку по промокоду OMAGAD
-					</p>
-				</section>
-				<section class="promo vegetables">
-					<h1 class="promo-title">Скидка 20% на всю еду <br> по промокоду LOVE.JS</h1>
-					<p class="promo-text">
-						Блюдо из ресторана привезут вместе с двумя подарочными книгами по фронтенду
-					</p>
-				</section>
-				<section class="promo sushi">
-					<h1 class="promo-title">Сеты со скидкой до 30% <br> в ресторанах</h1>
-					<p class="promo-text">
-						Скидки на сеты до 30 мая по промокоду DADADA
-					</p>
-				</section> -->
-			</section>
 			<section class="restaurants">
 				<div class="section-heading">
 					<h2 class="section-title">Рестораны</h2>
@@ -76,131 +79,7 @@
 					</label>
 				</div>
 				<div class="cards cards-restaurants">
-<!--					<a href="restaurant.html" class="card card-restaurant">-->
-<!--						<img src="img/pizza-plus/preview.jpg" alt="image" class="card-image"/>-->
-<!--						<div class="card-text">-->
-<!--							<div class="card-heading">-->
-<!--								<h3 class="card-title">Пицца плюс</h3>-->
-<!--								<span class="card-tag tag">50 мин</span>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; /.card-heading &ndash;&gt;-->
-<!--							<div class="card-info">-->
-<!--								<div class="rating">-->
-<!--									4.5-->
-<!--								</div>-->
-<!--								<div class="price">От 900 ₽</div>-->
-<!--								<div class="category">Пицца</div>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; /.card-info &ndash;&gt;-->
-<!--						</div>-->
-<!--						&lt;!&ndash; /.card-text &ndash;&gt;-->
-<!--					</a>-->
-<!--					&lt;!&ndash; /.card &ndash;&gt;-->
 
-<!--					<a href="restaurant.html" class="card card-restaurant">-->
-<!--						<img src="img/tanuki/preview.jpg" alt="image" class="card-image"/>-->
-<!--						<div class="card-text">-->
-<!--							<div class="card-heading">-->
-<!--								<h3 class="card-title">Тануки</h3>-->
-<!--								<span class="card-tag tag">60 мин</span>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; /.card-heading &ndash;&gt;-->
-<!--							<div class="card-info">-->
-<!--								<div class="rating">-->
-<!--									4.5-->
-<!--								</div>-->
-<!--								<div class="price">От 1 200 ₽</div>-->
-<!--								<div class="category">Суши, роллы</div>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; /.card-info &ndash;&gt;-->
-<!--						</div>-->
-<!--						&lt;!&ndash; /.card-text &ndash;&gt;-->
-<!--					</a>-->
-<!--					&lt;!&ndash; /.card &ndash;&gt;-->
-
-<!--					<a href="restaurant.html" class="card card-restaurant">-->
-<!--						<img src="img/food-band/preview.jpg" alt="image" class="card-image"/>-->
-<!--						<div class="card-text">-->
-<!--							<div class="card-heading">-->
-<!--								<h3 class="card-title">FoodBand</h3>-->
-<!--								<span class="card-tag tag">40 мин</span>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; /.card-heading &ndash;&gt;-->
-<!--							<div class="card-info">-->
-<!--								<div class="rating">-->
-<!--									4.5-->
-<!--								</div>-->
-<!--								<div class="price">От 450 ₽</div>-->
-<!--								<div class="category">Пицца</div>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; /.card-info &ndash;&gt;-->
-<!--						</div>-->
-<!--						&lt;!&ndash; /.card-text &ndash;&gt;-->
-<!--					</a>-->
-<!--					&lt;!&ndash; /.card &ndash;&gt;-->
-
-<!--					<a href="restaurant.html" class="card card-restaurant">-->
-<!--						<img src="img/palki-skalki/preview.jpg" alt="image" class="card-image"/>-->
-<!--						<div class="card-text">-->
-<!--							<div class="card-heading">-->
-<!--								<h3 class="card-title">Палки скалки</h3>-->
-<!--								<span class="card-tag tag">55 мин</span>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; /.card-heading &ndash;&gt;-->
-<!--							<div class="card-info">-->
-<!--								<div class="rating">-->
-<!--									4.5-->
-<!--								</div>-->
-<!--								<div class="price">От 500 ₽</div>-->
-<!--								<div class="category">Пицца</div>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; /.card-info &ndash;&gt;-->
-<!--						</div>-->
-<!--						&lt;!&ndash; /.card-text &ndash;&gt;-->
-<!--					</a>-->
-<!--					&lt;!&ndash; /.card &ndash;&gt;-->
-
-<!--					<a href="restaurant.html" class="card card-restaurant">-->
-<!--						<img src="img/gusi-lebedi/preview.jpg" alt="image" class="card-image"/>-->
-<!--						<div class="card-text">-->
-<!--							<div class="card-heading">-->
-<!--								<h3 class="card-title">Гуси Лебеди</h3>-->
-<!--								<span class="card-tag tag">75 мин</span>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; /.card-heading &ndash;&gt;-->
-<!--							<div class="card-info">-->
-<!--								<div class="rating">-->
-<!--									4.5-->
-<!--								</div>-->
-<!--								<div class="price">От 1 000 ₽</div>-->
-<!--								<div class="category">Русская кухня</div>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; /.card-info &ndash;&gt;-->
-<!--						</div>-->
-<!--						&lt;!&ndash; /.card-text &ndash;&gt;-->
-<!--					</a>-->
-<!--					&lt;!&ndash; /.card &ndash;&gt;-->
-
-<!--					<a href="restaurant.html" class="card card-restaurant">-->
-<!--						<img src="img/pizza-burger/preview.jpg" alt="image" class="card-image"/>-->
-<!--						<div class="card-text">-->
-<!--							<div class="card-heading">-->
-<!--								<h3 class="card-title">PizzaBurger</h3>-->
-<!--								<span class="card-tag tag">45 мин</span>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; /.card-heading &ndash;&gt;-->
-<!--							<div class="card-info">-->
-<!--								<div class="rating">-->
-<!--									4.5-->
-<!--								</div>-->
-<!--								<div class="price">От 700 ₽</div>-->
-<!--								<div class="category">Пицца</div>-->
-<!--							</div>-->
-<!--							&lt;!&ndash; /.card-info &ndash;&gt;-->
-<!--						</div>-->
-<!--						&lt;!&ndash; /.card-text &ndash;&gt;-->
-<!--					</a>-->
-					<!-- /.card -->
 				</div>
 				<!-- /.cards -->
 			</section>
@@ -336,6 +215,7 @@
 		<!-- /.modal-dialog -->
 	</div>
 <!--	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>-->
+
 	<script src="js/disabledScroll.js"></script>
 	<script src="js/main.js"></script>
 </body>

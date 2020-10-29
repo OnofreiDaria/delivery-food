@@ -1,5 +1,6 @@
 'use strict';
 
+
 const cartButton = document.querySelector("#cart-button");
 const modal = document.querySelector(".modal");
 const close = document.querySelector(".close");
@@ -29,6 +30,11 @@ const cardsRestaurants = document.querySelector('.cards-restaurants');
 
 let login = localStorage.getItem('delivery');
 
+function validName(str) {
+  const regName = /^[a-zA-Z0-9-_\.]{1,20}$/;
+  return regName.test(str);
+}
+
 function toggleModalAuth() {
   modalAuth.classList.toggle("is-open");
   if (modalAuth.classList.contains("is-open")) {
@@ -53,7 +59,6 @@ function authorized() {
   }
 
   userName.textContent = login;
-
   buttonAuth.style.display = 'none';
   userName.style.display = 'inline';
   buttonOut.style.display = 'block';
@@ -66,7 +71,7 @@ function notAuthorized() {
   function logIn(e) {
     e.preventDefault();
 
-    if(loginInput.value.trim()) {
+    if(validName(loginInput.value)) {
       login = loginInput.value;
 
       localStorage.setItem('delivery', login);
@@ -160,24 +165,40 @@ function createCardGood() {
 function openGoods(e) {
   const target = e.target;
 
-  const restaurant = target.closest('.card-restaurant');
+  if(login) {
+    const restaurant = target.closest('.card-restaurant');
+    if (restaurant) {
+      containerPromo.classList.add('hide');
+      restaurants.classList.add('hide');
+      menu.classList.remove('hide');
 
-  if (restaurant) {
-    containerPromo.classList.add('hide');
-    restaurants.classList.add('hide');
-    menu.classList.remove('hide');
+      cardsMenu.textContent = '';
 
-    cardsMenu.textContent = '';
-
-    createCardGood();
+      createCardGood();
+    }
+  } else {
+    toggleModalAuth();
   }
 
 }
-
 
 cardsRestaurants.addEventListener('click', openGoods);
 logo.addEventListener('click', function() {
   containerPromo.classList.remove('hide');
   restaurants.classList.remove('hide');
   menu.classList.add('hide');
+})
+
+
+// SLIDER
+
+new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  speed: 700,
+  loop: true,
+  autoplay: true,
+  effect: "cube",
+  cubeEffect: {
+    shadow: false
+  }
 })
